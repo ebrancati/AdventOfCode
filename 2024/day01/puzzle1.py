@@ -1,7 +1,12 @@
 def get_data(filename):
+    """
+    Reads data from a file and returns two lists: 
+    one for the left values and one for the right values.
+    """
+    
     left_list = []
     right_list = []
-
+    
     # Read the file and process each line
     with open(filename, 'r') as file:
         for line in file:
