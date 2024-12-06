@@ -1,6 +1,11 @@
 from collections import Counter
 
 def get_data(filename):
+    """
+    Reads data from a file and returns two lists: 
+    one for the left values and one for the right values.
+    """
+    
     left_list = []
     right_list = []
 
@@ -16,6 +21,11 @@ def get_data(filename):
     return left_list, right_list
 
 def calculate_similarity(left_list, right_list):
+    """
+    Calculates the similarity score between two lists of integers by 
+    summing the product of each number in the left_list with its 
+    corresponding occurrence count in the right_list.
+    """
 
     # Count occurrences of each number in the right list
     right_count = Counter(right_list)
