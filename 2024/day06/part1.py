@@ -54,7 +54,7 @@ def simulate_guard_path(map):
     return len(visitated)
 
 map = []
-with open("input1.txt", 'r') as file:
+with open("input.txt", 'r') as file:
     for row in file:
         map.append(row.strip())
 
